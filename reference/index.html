@@ -17,16 +17,20 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
 
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
+
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" integrity="sha256-PbSmjxuVAzJ6FPvNYsrXygfGhNJYyZ2GktDbkMBqQZg=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/v4-shims.min.css" integrity="sha256-A6jcAdwFD48VMjlI3GDxUd+eCQa7/KWy6G9oe/ovaPA=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -53,7 +57,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-index">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -67,20 +71,31 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">r2dii.data</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1.9001</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.3.9003</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="../reference/index.html">Reference</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    News
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Release notes</li>
+    <li>
+      <a href="../articles/r2dii-data-0-0-3.html">r2dii.data 0.0.3</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="../news/index.html">Change log</a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -126,30 +141,34 @@
     <tbody>
       <tr>
         <th colspan="2">
-          <h2 id="section-generic-datasets" class="hasAnchor"><a href="#section-generic-datasets" class="anchor"></a>Generic datasets</h2>
+          <h2 id="section-metadata" class="hasAnchor"><a href="#section-metadata" class="anchor"></a>Metadata</h2>
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
-          <p><code><a href="ald_description.html">ald_description</a></code> </p>
+          <p><code><a href="data_dictionary.html">data_dictionary</a></code> </p>
         </td>
-        <td><p>Description of a generic ald dataset</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="loanbook_description.html">loanbook_description</a></code> </p>
-        </td>
-        <td><p>Description of a generic loanbook dataset</p></td>
+        <td><p>Column definitions of all datasets</p></td>
       </tr>
     </tbody><tbody>
       <tr>
         <th colspan="2">
-          <h2 id="section-demo-datasets" class="hasAnchor"><a href="#section-demo-datasets" class="anchor"></a>Demo datasets</h2>
+          <h2 id="section-synthetic-datasets-for-demonstrations-and-tests" class="hasAnchor"><a href="#section-synthetic-datasets-for-demonstrations-and-tests" class="anchor"></a>Synthetic datasets for demonstrations and tests</h2>
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -159,15 +178,9 @@
       </tr><tr>
         
         <td>
-          <p><code><a href="data_dictionary.html">data_dictionary</a></code> </p>
+          <p><code><a href="ald_scenario_demo.html">ald_scenario_demo</a></code> </p>
         </td>
-        <td><p>A dataset that defines the columns of r2dii datasets</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="iso_codes.html">iso_codes</a></code> </p>
-        </td>
-        <td><p>A dataset linking country names with their ISO code</p></td>
+        <td><p>Asset level data plus scenario with sector/technology market share values</p></td>
       </tr><tr>
         
         <td>
@@ -183,17 +196,59 @@
       </tr><tr>
         
         <td>
-          <p><code><a href="region_isos.html">region_isos</a></code> </p>
+          <p><code><a href="region_isos_demo.html">region_isos_demo</a></code> </p>
         </td>
-        <td><p>A dataset outlining various region definitions (using iso codes)</p></td>
+        <td><p>A dataset outlining various region definitions</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="scenario_demo_2020.html">scenario_demo_2020</a></code> </p>
+        </td>
+        <td><p>A prepared climate scenario dataset for demonstration</p></td>
       </tr>
     </tbody><tbody>
       <tr>
         <th colspan="2">
-          <h2 id="section-datasets-to-look-up-sector-classification-codes" class="hasAnchor"><a href="#section-datasets-to-look-up-sector-classification-codes" class="anchor"></a>Datasets to look up sector-classification codes</h2>
+          <h2 id="section-use-country-codes-following-the-iso-standard" class="hasAnchor"><a href="#section-use-country-codes-following-the-iso-standard" class="anchor"></a>Use country codes following the ISO standard</h2>
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="iso_codes.html">iso_codes</a></code> </p>
+        </td>
+        <td><p>Countries and codes</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="region_isos.html">region_isos</a></code> </p>
+        </td>
+        <td><p>A dataset outlining various region definitions</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="region_isos_demo.html">region_isos_demo</a></code> </p>
+        </td>
+        <td><p>A dataset outlining various region definitions</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-sector-classification-codes" class="hasAnchor"><a href="#section-sector-classification-codes" class="anchor"></a>Sector-classification codes</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -212,12 +267,9 @@
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-generic-datasets">Generic datasets</a></li>
-      <li><a href="#section-demo-datasets">Demo datasets</a></li>
-      <li><a href="#section-datasets-to-look-up-sector-classification-codes">Datasets to look up sector-classification codes</a></li>
-    </ul>
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
@@ -228,7 +280,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
 </div>
 
       </footer>

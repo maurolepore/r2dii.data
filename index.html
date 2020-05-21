@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Datasets to Align Financial Markets with Climate Goals • r2dii.data</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" integrity="sha256-PbSmjxuVAzJ6FPvNYsrXygfGhNJYyZ2GktDbkMBqQZg=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/v4-shims.min.css" integrity="sha256-A6jcAdwFD48VMjlI3GDxUd+eCQa7/KWy6G9oe/ovaPA=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
+<script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="Datasets to Align Financial Markets with Climate Goals">
 <meta property="og:description" content="These datasets support the implementation in R of
     the software PACTA (Paris Agreement Capital Transition Assessment),
@@ -25,7 +26,7 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -38,20 +39,31 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">r2dii.data</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1.9001</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.3.9003</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="reference/index.html">Reference</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    News
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+<li class="dropdown-header">Release notes</li>
+    <li>
+      <a href="articles/r2dii-data-0-0-3.html">r2dii.data 0.0.3</a>
+    </li>
+    <li class="divider">
+    <li>
+      <a href="news/index.html">Change log</a>
+    </li>
+  </ul>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
@@ -82,40 +94,43 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="-datasets-to-align-financial-markets-with-climate-goals" class="section level1">
+<div id="r2diidata-" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#-datasets-to-align-financial-markets-with-climate-goals" class="anchor"></a><img src="https://i.imgur.com/3jITMq8.png" align="right" height="40"> Datasets to Align Financial Markets with Climate Goals</h1></div>
+<a href="#r2diidata-" class="anchor"></a>r2dii.data <a href="https://github.com/2DegreesInvesting/r2dii.data"><img src="https://imgur.com/A5ASZPE.png" align="right" height="43"></a>
+</h1></div>
 <!-- badges: start -->
 
-<p>These datasets support the implementation in R of the software ‘PACTA’ (Paris Agreement Capital Transition Assessment), which is a free tool that calculates the alignment between financial assets and climate scenarios (<a href="https://2degrees-investing.org/" class="uri">https://2degrees-investing.org/</a>). Financial institutions use ‘PACTA’ to study how their capital allocation impacts the climate. Because both financial institutions and market data providers keep their data private, this package provides fake, public data to enable the development and use of ‘PACTA’ in R.</p>
+<p>These datasets support the implementation in R of the software PACTA (Paris Agreement Capital Transition Assessment), which is a free tool that calculates the alignment between financial assets and climate scenarios (<a href="https://2degrees-investing.org/" class="uri">https://2degrees-investing.org/</a>). Financial institutions use PACTA to study how their capital allocation impacts the climate. Because both financial institutions and market data providers keep their data private, this package provides fake, public data to enable the development and use of PACTA in R.</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p>Install the development version of r2dii.data with something like this:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># install.packages("devtools")</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a>devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">"2DegreesInvesting/r2dii.data"</span>)</span></code></pre></div>
+<p>Install the released version of r2dii.data from CRAN with:</p>
+<div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"r2dii.data"</span>)</pre></div>
+<p>Or install the development version of r2dii.data with something like this:</p>
+<div class="sourceCode" id="cb2"><pre class="r"><span class="co"># install.packages("devtools")</span>
+<span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu">install_github</span>(<span class="st">"2DegreesInvesting/r2dii.data"</span>)</pre></div>
 <p><a href="https://gist.github.com/maurolepore/a0187be9d40aee95a43f20a85f4caed6#installation">How to minimize installation errors?</a></p>
 </div>
 <div id="example" class="section level2">
 <h2 class="hasAnchor">
 <a href="#example" class="anchor"></a>Example</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(r2dii.data)</span>
-<span id="cb2-2"><a href="#cb2-2"></a></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="kw"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(data_dictionary)</span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="co">#&gt;    dataset                   column    typeof</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="co">#&gt; 1 ald_demo            ald_timestamp character</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="co">#&gt; 2 ald_demo      country_of_domicile character</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="co">#&gt; 3 ald_demo          emission_factor    double</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="co">#&gt; 4 ald_demo is_ultimate_listed_owner   logical</span></span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="co">#&gt; 5 ald_demo        is_ultimate_owner   logical</span></span>
-<span id="cb2-10"><a href="#cb2-10"></a><span class="co">#&gt; 6 ald_demo             name_company character</span></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="co">#&gt;                                               definition</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a><span class="co">#&gt; 1      Date at which asset data was pulled from database</span></span>
-<span id="cb2-13"><a href="#cb2-13"></a><span class="co">#&gt; 2                    Country where company is registered</span></span>
-<span id="cb2-14"><a href="#cb2-14"></a><span class="co">#&gt; 3        Company level emission factor of the technology</span></span>
-<span id="cb2-15"><a href="#cb2-15"></a><span class="co">#&gt; 4          Flag if company is the listed ultimate parent</span></span>
-<span id="cb2-16"><a href="#cb2-16"></a><span class="co">#&gt; 5 Flag if company is the ultimate parent in our database</span></span>
-<span id="cb2-17"><a href="#cb2-17"></a><span class="co">#&gt; 6               The name of the company owning the asset</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">r2dii.data</span>)
+
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="no">data_dictionary</span>)
+<span class="co">#&gt;    dataset                   column    typeof</span>
+<span class="co">#&gt; 1 ald_demo            ald_timestamp character</span>
+<span class="co">#&gt; 2 ald_demo      country_of_domicile character</span>
+<span class="co">#&gt; 3 ald_demo          emission_factor    double</span>
+<span class="co">#&gt; 4 ald_demo is_ultimate_listed_owner   logical</span>
+<span class="co">#&gt; 5 ald_demo        is_ultimate_owner   logical</span>
+<span class="co">#&gt; 6 ald_demo             name_company character</span>
+<span class="co">#&gt;                                               definition</span>
+<span class="co">#&gt; 1      Date at which asset data was pulled from database</span>
+<span class="co">#&gt; 2                    Country where company is registered</span>
+<span class="co">#&gt; 3        Company level emission factor of the technology</span>
+<span class="co">#&gt; 4          Flag if company is the listed ultimate parent</span>
+<span class="co">#&gt; 5 Flag if company is the ultimate parent in our database</span>
+<span class="co">#&gt; 6               The name of the company owning the asset</span></pre></div>
 </div>
 </div>
   </div>
@@ -124,7 +139,9 @@
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/2DegreesInvesting/r2dii.data">https://​github.com/​2DegreesInvesting/​r2dii.data</a>
+<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=r2dii.data">https://​cloud.r-project.org/​package=r2dii.data</a>
+</li>
+<li>Browse source code at <br><a href="https://github.com/2DegreesInvesting/r2dii.data/">https://​github.com/​2DegreesInvesting/​r2dii.data/​</a>
 </li>
 <li>Report a bug at <br><a href="https://github.com/2DegreesInvesting/r2dii.data/issues">
     https://​github.com/​2DegreesInvesting/​r2dii.data/​issues</a>
@@ -158,6 +175,7 @@
 <ul class="list-unstyled">
 <li><a href="https://www.tidyverse.org/lifecycle/#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="lifecycle"></a></li>
 <li><a href="https://CRAN.R-project.org/package=r2dii.data"><img src="https://www.r-pkg.org/badges/version/r2dii.data" alt="CRAN status"></a></li>
+<li><a href="https://CRAN.R-project.org/package=r2dii.data"><img src="https://cranlogs.r-pkg.org/badges/grand-total/r2dii.data"></a></li>
 </ul>
 </div>
 </div>
@@ -169,7 +187,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
 </div>
 
       </footer>

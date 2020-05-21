@@ -7,7 +7,7 @@
     <loc>https://github.com/2DegreesInvesting/r2dii.data//reference/ald_demo.html</loc>
   </url>
   <url>
-    <loc>https://github.com/2DegreesInvesting/r2dii.data//reference/ald_description.html</loc>
+    <loc>https://github.com/2DegreesInvesting/r2dii.data//reference/ald_scenario_demo.html</loc>
   </url>
   <url>
     <loc>https://github.com/2DegreesInvesting/r2dii.data//reference/classification_bridge.html</loc>
@@ -22,15 +22,24 @@
     <loc>https://github.com/2DegreesInvesting/r2dii.data//reference/loanbook_demo.html</loc>
   </url>
   <url>
-    <loc>https://github.com/2DegreesInvesting/r2dii.data//reference/loanbook_description.html</loc>
+    <loc>https://github.com/2DegreesInvesting/r2dii.data//reference/overwrite_demo.html</loc>
   </url>
   <url>
-    <loc>https://github.com/2DegreesInvesting/r2dii.data//reference/overwrite_demo.html</loc>
+    <loc>https://github.com/2DegreesInvesting/r2dii.data//reference/r2dii.data-package.html</loc>
   </url>
   <url>
     <loc>https://github.com/2DegreesInvesting/r2dii.data//reference/region_isos.html</loc>
   </url>
   <url>
+    <loc>https://github.com/2DegreesInvesting/r2dii.data//reference/region_isos_demo.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/2DegreesInvesting/r2dii.data//reference/scenario_demo_2020.html</loc>
+  </url>
+  <url>
     <loc>https://github.com/2DegreesInvesting/r2dii.data//reference/sector_classifications.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/2DegreesInvesting/r2dii.data//articles/r2dii-data-0-0-3.html</loc>
   </url>
 </urlset>
